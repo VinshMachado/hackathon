@@ -1,11 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Homenav from "./components/Homenav";
+import { Homenav } from "./costomcomponents/Homenav";
+import { SidebarProvider } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
+import { SidebarInset } from "@/components/ui/sidebar";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function Home() {
   return (
     <>
-      <Homenav />
+      <SidebarProvider>
+        <AppSidebar variant="floating" />
+        <SidebarInset>
+          <Homenav />
+        </SidebarInset>
+      </SidebarProvider>
     </>
   );
 }
