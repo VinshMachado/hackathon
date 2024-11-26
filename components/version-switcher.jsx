@@ -42,15 +42,35 @@ export function VersionSwitcher({ versions, defaultVersion }) {
             className="w-[--radix-dropdown-menu-trigger-width]"
             align="start"
           >
-            {versions.map((version) => (
-              <DropdownMenuItem
-                key={version}
-                onSelect={() => setSelectedVersion(version)}
-              >
-                {version}{" "}
-                {version === selectedVersion && <Check className="ml-auto" />}
-              </DropdownMenuItem>
-            ))}
+            {versions.map((version) => {
+              if (version == " Payments") {
+                return (
+                  <DropdownMenuItem
+                    key={version}
+                    className="text-green-600"
+                    onSelect={() => setSelectedVersion(version)}
+                  >
+                    {version}{" "}
+                    {version === selectedVersion && (
+                      <Check className="ml-auto" />
+                    )}
+                  </DropdownMenuItem>
+                );
+              } else {
+                return (
+                  <DropdownMenuItem
+                    key={version}
+                    className="text-red-600"
+                    onSelect={() => setSelectedVersion(version)}
+                  >
+                    {version}{" "}
+                    {version === selectedVersion && (
+                      <Check className="ml-auto" />
+                    )}
+                  </DropdownMenuItem>
+                );
+              }
+            })}
           </DropdownMenuContent>
         </DropdownMenu>
       </SidebarMenuItem>

@@ -6,18 +6,12 @@ import { AppSidebar } from "@/components/app-sidebar";
 import { SidebarInset } from "@/components/ui/sidebar";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import Payment from "./costomcomponents/Payment";
-import Yettopay from "./costomcomponents/Yettopay";
+import Yettopay from "./costomcomponents/Paid";
 
 export default function Home() {
   return (
     <>
-      <SidebarProvider>
-        <AppSidebar variant="floating" />
-        <SidebarInset>
-          <Homenav />
-          <Payment />
-        </SidebarInset>
-      </SidebarProvider>
+      <Payment />
     </>
   );
 }

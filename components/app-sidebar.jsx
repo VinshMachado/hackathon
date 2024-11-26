@@ -15,10 +15,11 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar";
 import { FaFileExcel } from "react-icons/fa";
+import Link from "next/link";
 
 // This is sample data.
 const data = {
-  versions: [" payments", " yet to pay"],
+  versions: [" Payments", " Yet To Pay"],
   navMain: [
     {
       title: "Data",
@@ -26,11 +27,11 @@ const data = {
       items: [
         {
           title: "pending",
-          url: "#",
+          url: "./Payment",
         },
         {
           title: "paid",
-          url: "#",
+          url: "./Paid",
         },
       ],
     },
@@ -40,12 +41,9 @@ const data = {
 export function AppSidebar({ ...props }) {
   return (
     <Sidebar {...props}>
-      <SidebarHeader>
-        <VersionSwitcher
-          versions={data.versions}
-          defaultVersion={data.versions[0]}
-        />
-      </SidebarHeader>
+      <SidebarGroupLabel className="mt-10 text-2xl">
+        <h1 className="font-bold">Dashboard</h1>
+      </SidebarGroupLabel>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
         {data.navMain.map((item) => (
@@ -71,12 +69,14 @@ export function AppSidebar({ ...props }) {
           <SidebarGroupLabel>UPLOAD</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton>
-                  <FaFileExcel />
-                  upload excel files
-                </SidebarMenuButton>
-              </SidebarMenuItem>
+              <Link href={"./Drop"}>
+                <SidebarMenuItem>
+                  <SidebarMenuButton>
+                    <FaFileExcel />
+                    upload excel files
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </Link>
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>

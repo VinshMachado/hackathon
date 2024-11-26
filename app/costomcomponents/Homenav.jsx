@@ -7,7 +7,7 @@ export const Homenav = () => {
       <SidebarTrigger className="bg-black text-white text-xl rounded px-4 py-2  " />
 
       <h1 className="font-heading pl-10 text-white text-6xl shadow-sm">
-        Transsact
+        Transacct
       </h1>
     </div>
   );
