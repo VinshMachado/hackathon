@@ -2,6 +2,7 @@ import * as React from "react";
 import { SidebarFooter } from "@/components/ui/sidebar";
 import { SearchForm } from "@/components/search-form";
 import { VersionSwitcher } from "@/components/version-switcher";
+
 import {
   Sidebar,
   SidebarContent,
@@ -26,12 +27,20 @@ const data = {
       url: "#",
       items: [
         {
-          title: "pending",
-          url: "./Payment",
+          title: "ask AI",
+          url: "./ai",
         },
         {
-          title: "paid",
-          url: "./Paid",
+          title: "videocall",
+          url: "./videocall",
+        },
+        {
+          title: "Donation",
+          url: "./donation",
+        },
+        {
+          title: "chat",
+          url: "./chat",
         },
       ],
     },
@@ -42,7 +51,7 @@ export function AppSidebar({ ...props }) {
   return (
     <Sidebar {...props}>
       <SidebarGroupLabel className="mt-10 text-2xl">
-        <h1 className="font-bold">Dashboard</h1>
+        <h1 className="font-bold">Our services</h1>
       </SidebarGroupLabel>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
@@ -66,18 +75,9 @@ export function AppSidebar({ ...props }) {
       <SidebarRail />
       <SidebarFooter>
         <SidebarGroup>
-          <SidebarGroupLabel>UPLOAD</SidebarGroupLabel>
+          <SidebarGroupLabel>donations</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
-              <Link href={"./Drop"}>
-                <SidebarMenuItem>
-                  <SidebarMenuButton>
-                    <FaFileExcel />
-                    upload excel files
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </Link>
-            </SidebarMenu>
+            <SidebarMenu></SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarFooter>

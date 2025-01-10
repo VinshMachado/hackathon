@@ -5,8 +5,7 @@ export default function Layout({ children }) {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <main>
-        <SidebarTrigger />
+      <main className="h-full w-full">
         {children}
       </main>
     </SidebarProvider>
