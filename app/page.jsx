@@ -3,61 +3,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      {/* Header Section */}
-      <header>
-        <nav className="bg-green-600 text-white p-4 flex justify-between items-center">
-          <div className="container mx-auto flex justify-between items-center">
-            <a href="#" className="text-2xl font-bold">
-              Doctor
-            </a>
-            <ul className="flex space-x-7">
-              <li>
-                <a href="#" className="hover:underline">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
       {/* About Section */}
-      <div className="flex  justify-start mt-10 w-full h-auto">
+      <div className="flex flex wrap justify-start mt-10 w-full h-auto border-t-4 border-b-4 border-green-600">
         {/* Left Section */}
-        <div className="flex flex-col justify-center w-100 h-100 bg-green-600 border-4 border-green-600 rounded-lg ">
-          <div className="ml-5">
-            <div className="flex">
-              <p className="text-4xl mt-10 text-white">Save Humanity</p>
-              <img
-                src="/care.png"
-                alt="doctor"
-                className="w-15 h-20 ml-10 mr-2 border-20 bg-pink-100 rounded-lg"
-              />
+        <div className="flex flex-col justify-center w-100 h-100 p-10">
+          <div className="ml-10">
+            <div className=" flex flex-col bg-green-600 h-100 boder-4 border-green-600  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeIn">
+            <img src="/health-call.png" alt="logo" className="w-70 h-60" />
+            <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
             </div>
-            <h1 className="font-Arial text-8xl text-white mr-10">
-              Better Help
-            </h1>
-            <p className="text-4xl text-white">Through Technology</p>
           </div>
         </div>
 
         {/* Middle Section */}
-        <div className="flex justify-center items-center ml-10">
+        <div className="flex flex-wrap justify-center items-center ml-10">
           <div className="max-w-max h-auto flex flex-col items-center p-4">
             <img
               src="pexels-shvetsa-4225881.jpg"
@@ -93,7 +52,7 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <div className="max-w-max h-auto flex flex-col items-center p-4">
             <img
-              src="/pexels-mirdental-network-34165767-7074380.jpg"
+              src="/pexels-prasanthinturi-17799779.jpg"
               alt="yoga"
               className="w-50 h-64 mb-20 mr-3 border-4 border-green-600 rounded-lg"
             />
@@ -122,6 +81,14 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center mt-10">
+  <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
+    Doctors Login
+  </button>
+  <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700">
+    Patient Login
+  </button>
+</div>
       <div
         id="about"
         className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-green-100 p-8 rounded-lg shadow-lg"
@@ -153,9 +120,9 @@ export default function Home() {
           Our Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
             <img
-              src="F:/programs/code/hackathon/images/laptop.png"
+              src="/laptop.png"
               alt="Video Call"
               className="w-24 h-24 mb-4"
             />
@@ -167,9 +134,9 @@ export default function Home() {
               from the comfort of your home.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
             <img
-              src="F:/programs/code/hackathon/images/mind-health.png"
+              src="/mind-health.png"
               alt="AI Assistance"
               className="w-24 h-24 mb-4"
             />
@@ -181,9 +148,9 @@ export default function Home() {
               your symptoms and medical history.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
             <img
-              src="F:/programs/code/hackathon/images/donation.png"
+              src="/donation.png"
               alt="Donation Fund"
               className="w-24 h-24 mb-4"
             />
@@ -204,6 +171,9 @@ export default function Home() {
           <h2 className="text-2xl font-semibold mb-5 text-blue-600">
             Contact Us
           </h2>
+          <div className="flex justify-center items-center">
+            <img src="/GitHub_Invertocat_Dark.png" href="#" alt="git" className="w-10 mb-10" />
+          </div>
           <p className="mb-10 text-gray-700">
             Get in touch with us for more information.
           </p>
