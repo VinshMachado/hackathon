@@ -1,3 +1,5 @@
+const { Scale } = require('lucide-react');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -99,6 +101,16 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        appear:{
+          from:{
+            opacity: 0,
+            Scale: 0,
+          },
+          to:{
+            opacity: 1,
+            Scale: 1,
+          }
+        }
       },
       
       animation: {
@@ -106,6 +118,7 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
         fadeIn: 'fadeIn 3s ease-in-out',
         fadeInUp: 'fadeInUp 0.5s ease-in',
+        appear  : 'appear linear,animation-timline: view()',
       },
     },
     fontFamily: {

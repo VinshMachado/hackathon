@@ -9,7 +9,7 @@ export default function Home() {
         {/* Left Section */}
         <div className="flex flex-col justify-center w-100 h-100 p-10">
           <div className="ml-10">
-            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeInUp ">
+            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers  ">
             <img src="/health-call.png" alt="logo" className="w-70 h-60" />
             <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
             </div>
@@ -18,7 +18,7 @@ export default function Home() {
 
         {/* Middle Section */}
         <div className="flex flex-wrap justify-center items-center ml-10">
-          <div className="max-w-max h-auto flex flex-col items-center p-4 animate-fadeInUp delay-25">
+          <div className="max-w-max h-auto flex flex-col items-center p-4  delay-25">
             <img
               src="pexels-shvetsa-4225881.jpg"
               alt="yoga"
@@ -30,7 +30,7 @@ export default function Home() {
               className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
             />
           </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 animate-fadeInUp delay-50">
+          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5  delay-50">
             <img
               src="/doctorw.png"
               alt="doctor"
@@ -51,7 +51,7 @@ export default function Home() {
 
         {/* Right Section */}
         <div className="flex justify-center items-center">
-          <div className="max-w-max h-auto flex flex-col items-center p-4 animate-fadeInUp">
+          <div className="max-w-max h-auto flex flex-col items-center p-4 ">
             <img
               src="/pexels-prasanthinturi-17799779.jpg"
               alt="yoga"
@@ -63,7 +63,7 @@ export default function Home() {
               className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
             />
           </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 animate-fadeInUp">
+          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 ">
             <img
               src="/hospitalw.png"
               alt="doctor"
@@ -96,7 +96,7 @@ export default function Home() {
       </div>
       <div
         id="about"
-        className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-green-100 p-8 rounded-lg shadow-lg"
+        className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-green-100 p-8 rounded-lg shadow-lg animate-appear"
       >
         <h1 className="text-4xl font-bold text-green-700 mb-4">About</h1>
         <p className="text-lg text-gray-700 text-center max-w-2xl">
