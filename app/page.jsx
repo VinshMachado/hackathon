@@ -9,15 +9,9 @@ export default function Home() {
         {/* Left Section */}
         <div className="flex flex-col justify-center w-100 h-100 p-10">
           <div className="ml-10">
-<<<<<<< HEAD
-            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers  ">
-            <img src="/health-call.png" alt="logo" className="w-70 h-60" />
-            <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
-=======
             <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeInUp ">
               <img src="/health-call.png" alt="logo" className="w-70 h-60" />
               <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
->>>>>>> 2a026aa45f28074adbbfdfe302567c889dd02c43
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-const { Scale } = require('lucide-react');
+const { Scale } = require("lucide-react");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -101,29 +101,23 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
-        appear:{
-          from:{
+        appear: {
+          from: {
             opacity: 0,
             Scale: 0,
           },
-          to:{
+          to: {
             opacity: 1,
             Scale: 1,
-          }
-        }
+          },
+        },
       },
 
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-<<<<<<< HEAD
-        fadeIn: 'fadeIn 3s ease-in-out',
-        fadeInUp: 'fadeInUp 0.5s ease-in',
-        appear  : 'appear linear,animation-timline: view()',
-=======
         fadeIn: "fadeIn 3s ease-in-out",
         fadeInUp: "fadeInUp 0.5s ease-in",
->>>>>>> 2a026aa45f28074adbbfdfe302567c889dd02c43
       },
     },
     fontFamily: {
