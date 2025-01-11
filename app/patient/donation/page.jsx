@@ -73,54 +73,56 @@ const donation = () => {
   }, []);
 
   return (
-    <div className="w-full h-[600px] sm:h-[400px] bg-gray-500">
-      <Carousel className="h-full">
-        <CarouselContent className="h-full">
-          {data.map((data) => {
-            console.log(data.name);
-            return (
-              <CarouselItem className="flex items-center justify-center h-full text-white text-lg bg-gray-700">
-                <div className="max-w-sm w-full bg-white rounded-lg shadow-lg p-4 space-y-4">
-                  {/* Profile Picture */}
-                  <div className="flex justify-center">
-                    <img
-                      src="https://pics.craiyon.com/2024-01-01/YZ7H8ct6RF-8vEJ99gEmVg.webp"
-                      alt="Profile"
-                      className="w-24 h-24 rounded-full object-cover border-2 border-gray-300"
-                    />
+    <>
+      <div className="w-full h-[600px] sm:h-[500px] flex items-center justify-center p-10 bg-green-400">
+        <Carousel className="h-full w-full">
+          <CarouselContent className="h-full">
+            {data.map((data) => {
+              console.log(data.name);
+              return (
+                <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                  <div className="max-w-sm w-full bg-white rounded-lg shadow-lg p-4 space-y-4">
+                    {/* Profile Picture */}
+                    <div className="flex justify-center">
+                      <img
+                        src="https://pics.craiyon.com/2024-01-01/YZ7H8ct6RF-8vEJ99gEmVg.webp"
+                        alt="Profile"
+                        className="w-24 h-24 rounded-full object-cover border-2 border-gray-300"
+                      />
+                    </div>
+
+                    {/* Name */}
+                    <h2 className="text-xl font-semibold text-center text-black">
+                      {data.name}
+                    </h2>
+
+                    {/* Description */}
+                    <p className="text-gray-600 text-center">{data.desc}</p>
+
+                    {/* Amount */}
+                    <div className="flex justify-center">
+                      <span className="text-lg font-bold text-blue-600">
+                        ₹{data.amount}
+                      </span>
+                    </div>
+
+                    {/* QR Code Image */}
+                    <div className="flex justify-center">
+                      <img
+                        src={data.qrcode}
+                        alt="QR Code"
+                        className="w-32 h-32 object-contain"
+                      />
+                    </div>
                   </div>
-
-                  {/* Name */}
-                  <h2 className="text-xl font-semibold text-center text-black">
-                    {data.name}
-                  </h2>
-
-                  {/* Description */}
-                  <p className="text-gray-600 text-center">{data.desc}</p>
-
-                  {/* Amount */}
-                  <div className="flex justify-center">
-                    <span className="text-lg font-bold text-blue-600">
-                      ₹{data.amount}
-                    </span>
-                  </div>
-
-                  {/* QR Code Image */}
-                  <div className="flex justify-center">
-                    <img
-                      src={data.qrcode}
-                      alt="QR Code"
-                      className="w-32 h-32 object-contain"
-                    />
-                  </div>
-                </div>
-              </CarouselItem>
-            );
-          })}
-        </CarouselContent>
-        <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2" />
-        <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2" />
-      </Carousel>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 transform -translate-y-1/2" />
+          <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2" />
+        </Carousel>
+      </div>
       <div>
         <AlertDialog>
           <AlertDialogTrigger>
@@ -159,7 +161,7 @@ const donation = () => {
           </AlertDialogContent>
         </AlertDialog>
       </div>
-    </div>
+    </>
   );
 };
 
