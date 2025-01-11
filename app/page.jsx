@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div>
       {/* About Section */}
-      <div className="flex flex wrap justify-start mt-10 w-full h-auto border-t-4 border-b-4 border-green-600">
+      <div className="flex wrap justify-start w-full h-auto bg-gradient-to-r from-green-700 to-green-400">
         {/* Left Section */}
         <div className="flex flex-col justify-center w-100 h-100 p-10">
           <div className="ml-10">
-            <div className=" flex flex-col bg-green-600 h-100 boder-4 border-green-600  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeIn">
+            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeInUp ">
               <img src="/health-call.png" alt="logo" className="w-70 h-60" />
               <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
             </div>
@@ -18,66 +18,66 @@ export default function Home() {
 
         {/* Middle Section */}
         <div className="flex flex-wrap justify-center items-center ml-10">
-          <div className="max-w-max h-auto flex flex-col items-center p-4">
+          <div className="max-w-max h-auto flex flex-col items-center p-4 animate-fadeInUp delay-25">
             <img
               src="pexels-shvetsa-4225881.jpg"
               alt="yoga"
-              className="w-50 h-64 mb-20 mr-3 border-4 border-green-600 rounded-lg"
+              className="w-50 h-64 mb-20 mr-3 border-4 border-green-800 rounded-lg shadow-lg"
             />
             <img
               src="/pexels-mariya-b-555701080-30146897.jpg"
               alt="online"
-              className="w-50 h-64 -ml-1 border-4 border-green-600 rounded-lg"
+              className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
             />
           </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5">
+          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 animate-fadeInUp delay-50">
             <img
-              src="/doctor.png"
+              src="/doctorw.png"
               alt="doctor"
-              className="w-30 h-40 mb-10 ml-3 border-green-600 rounded-lg"
+              className="w-30 h-40 mb-10 ml-3 border-green-800 rounded-lg fil "
             />
             <img
               src="/pexels-mirdental-network-34165767-7074380.jpg"
               alt="doctor"
-              className="w-50 h-64 border-4 border-green-600 mr-5 rounded-lg"
+              className="w-50 h-64 border-4 border-green-800 mr-5 rounded-lg shadow-lg"
             />
             <img
-              src="/stethoscope.png"
+              src="/stethoscopew.png"
               alt="doctor"
-              className="w-30 h-40 mt-10 mr-2 border-green-600 rounded-lg"
+              className="w-30 h-40 mt-10 mr-2 border-green-800 rounded-lg  "
             />
           </div>
         </div>
 
         {/* Right Section */}
         <div className="flex justify-center items-center">
-          <div className="max-w-max h-auto flex flex-col items-center p-4">
+          <div className="max-w-max h-auto flex flex-col items-center p-4 animate-fadeInUp">
             <img
               src="/pexels-prasanthinturi-17799779.jpg"
               alt="yoga"
-              className="w-50 h-64 mb-20 mr-3 border-4 border-green-600 rounded-lg"
+              className="w-50 h-64 mb-20 mr-3 border-4 border-green-800 rounded-lg shadow-lg"
             />
             <img
               src="/pexels-rihan-ishan-das-739500-2519332.jpg"
               alt="online"
-              className="w-50 h-64 -ml-1 border-4 border-green-600 rounded-lg"
+              className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
             />
           </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5">
+          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 animate-fadeInUp">
             <img
-              src="/hospital.png"
+              src="/hospitalw.png"
               alt="doctor"
-              className="w-30 h-40 mb-10 ml-3 border-green-600 rounded-lg"
+              className="w-30 h-40 mb-10 ml-3 border-green-800 rounded-lg"
             />
             <img
               src="/pexels-karolina-grabowska-7195112.jpg"
               alt="doctor"
-              className="w-50 h-64 border-4 border-green-600 mr-5 rounded-lg"
+              className="w-50 h-64 border-4 border-green-800 mr-5 rounded-lg shadow-lg"
             />
             <img
-              src="/heart.png"
+              src="/white heart.png"
               alt="doctor"
-              className="w-30 h-40 mt-10 mr-2 border-green-600 rounded-lg"
+              className="w-30 h-40 mt-10 mr-2 border-green-800 rounded-lg"
             />
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
           Our Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
             <img
               src="/laptop.png"
               alt="Video Call"
@@ -139,7 +139,7 @@ export default function Home() {
               from the comfort of your home.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
             <img
               src="/mind-health.png"
               alt="AI Assistance"
@@ -153,7 +153,7 @@ export default function Home() {
               your symptoms and medical history.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-600">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
             <img
               src="/donation.png"
               alt="Donation Fund"
@@ -173,7 +173,7 @@ export default function Home() {
       {/* Contact Section */}
       <div id="contact" className="container mx-auto mt-10 p-5">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold mb-5 text-blue-600">
+          <h2 className="text-2xl font-semibold mb-5 text-blue-800">
             Contact Us
           </h2>
           <div className="flex justify-center items-center">
