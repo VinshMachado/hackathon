@@ -85,7 +85,7 @@ const donation = () => {
                     {/* Profile Picture */}
                     <div className="flex justify-center">
                       <img
-                        src="https://pics.craiyon.com/2024-01-01/YZ7H8ct6RF-8vEJ99gEmVg.webp"
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                         alt="Profile"
                         className="w-24 h-24 rounded-full object-cover border-2 border-gray-300"
                       />
