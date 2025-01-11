@@ -83,7 +83,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
-        <Link href="./doctors">
+        <Link href="./doctor">
           <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
             Doctors Login
           </button>
