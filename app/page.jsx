@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -82,13 +83,17 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
-  <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
-    Doctors Login
-  </button>
-  <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700">
-    Patient Login
-  </button>
-</div>
+        <Link href="./doctors">
+          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
+            Doctors Login
+          </button>
+        </Link>
+        <Link href="./patient/ai">
+          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700">
+            Patient Login
+          </button>
+        </Link>
+      </div>
       <div
         id="about"
         className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-green-100 p-8 rounded-lg shadow-lg"
@@ -172,7 +177,12 @@ export default function Home() {
             Contact Us
           </h2>
           <div className="flex justify-center items-center">
-            <img src="/GitHub_Invertocat_Dark.png" href="#" alt="git" className="w-10 mb-10" />
+            <img
+              src="/GitHub_Invertocat_Dark.png"
+              href="#"
+              alt="git"
+              className="w-10 mb-10"
+            />
           </div>
           <p className="mb-10 text-gray-700">
             Get in touch with us for more information.
