@@ -3,7 +3,7 @@ import React from "react";
 const videocall = () => {
   return (
     <>
-      <div className="bg-black text-white p-4 rounded-t-lg flex">
+      <div className="bg-green-600 text-white p-4 rounded-t-lg flex">
         <h2 className="pl-20 text-xl font-semibold">Call</h2>
       </div>
       <iframe
