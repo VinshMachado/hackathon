@@ -126,7 +126,9 @@ const donation = () => {
       <div>
         <AlertDialog>
           <AlertDialogTrigger>
-            <Button className="m-10">Raise Funds?</Button>
+            <Button className="m-10 bg-green-400 shadow-lggit ">
+              Raise Funds?
+            </Button>
           </AlertDialogTrigger>
           <AlertDialogContent>
             <AlertDialogHeader>

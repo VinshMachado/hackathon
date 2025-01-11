@@ -5,13 +5,19 @@ export default function Home() {
   return (
     <div>
       {/* About Section */}
-      <div className="flex flex wrap justify-start w-full h-auto bg-gradient-to-r from-green-700 to-green-400">
+      <div className="flex wrap justify-start w-full h-auto bg-gradient-to-r from-green-700 to-green-400">
         {/* Left Section */}
         <div className="flex flex-col justify-center w-100 h-100 p-10">
           <div className="ml-10">
+<<<<<<< HEAD
             <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers  ">
             <img src="/health-call.png" alt="logo" className="w-70 h-60" />
             <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
+=======
+            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeInUp ">
+              <img src="/health-call.png" alt="logo" className="w-70 h-60" />
+              <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
+>>>>>>> 2a026aa45f28074adbbfdfe302567c889dd02c43
             </div>
           </div>
         </div>
@@ -83,7 +89,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
-        <Link href="./doctors">
+        <Link href="./doctor">
           <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
             Doctors Login
           </button>

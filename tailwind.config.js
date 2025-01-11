@@ -85,20 +85,20 @@ module.exports = {
           },
           to: {
             height: "0",
-          },    
+          },
         },
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
         fadeInUp: {
-          '0%': {
+          "0%": {
             opacity: 0,
-            transform: 'translateY(20px)',
+            transform: "translateY(20px)",
           },
-          '100%': {
+          "100%": {
             opacity: 1,
-            transform: 'translateY(0)',
+            transform: "translateY(0)",
           },
         },
         appear:{
@@ -112,13 +112,18 @@ module.exports = {
           }
         }
       },
-      
+
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+<<<<<<< HEAD
         fadeIn: 'fadeIn 3s ease-in-out',
         fadeInUp: 'fadeInUp 0.5s ease-in',
         appear  : 'appear linear,animation-timline: view()',
+=======
+        fadeIn: "fadeIn 3s ease-in-out",
+        fadeInUp: "fadeInUp 0.5s ease-in",
+>>>>>>> 2a026aa45f28074adbbfdfe302567c889dd02c43
       },
     },
     fontFamily: {

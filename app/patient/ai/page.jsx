@@ -50,7 +50,11 @@ const page = () => {
             Enter your symptoms
           </div>
           <div className="flex mt-20 justify-center items-center absolute top-[50px] right-[330px] w-[600px] h-[600px]">
-            <img src="/gray logo.png" alt="ai" className="w-full h-auto gray-filter opacity-10" />
+            <img
+              src="/gray logo.png"
+              alt="ai"
+              className="w-full h-auto gray-filter opacity-10"
+            />
           </div>
           {messages.map((msg, index) => (
             <div
@@ -59,7 +63,6 @@ const page = () => {
                 msg.from === "user" ? "justify-end" : "justify-start"
               }`}
             >
-              
               <div
                 className={`max-w-xs p-3 rounded-lg ${
                   msg.from === "user"
