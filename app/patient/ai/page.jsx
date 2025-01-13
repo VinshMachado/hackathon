@@ -24,12 +24,21 @@ const page = () => {
         }
 
         console.log(data.data);
+        if(data.data.score!=25){
         setMessages([
           ...messages,
           { text: messageInput, from: "user" },
           { text: `mostly you have ${data.data.answer}`, from: "bot" },
         ]);
         setMessageInput("");
+        }else{
+          setMessages([
+          ...messages,
+          { text: messageInput, from: "user" },
+          { text: `${data.data.answer}`, from: "bot" },
+        ]);
+        setMessageInput("");
+        }
       } catch (e) {
         console.log(e);
       }
