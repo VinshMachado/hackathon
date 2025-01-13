@@ -24,17 +24,18 @@ const page = () => {
         }
 
         console.log(data.data);
-       setMessages([
-  ...messages,
-  { text: messageInput, from: "user" },
-  { 
-    text: data.data.score !== 25 
-      ? `mostly you have ${data.data.answer}` 
-      : `${data.data.answer}`, 
-    from: "bot" 
-  },
-]);
-setMessageInput("");
+        setMessages([
+          ...messages,
+          { text: messageInput, from: "user" },
+          {
+            text:
+              data.data.score == 25
+                ? `mostly you have ${data.data.answer}`
+                : `${data.data.answer}`,
+            from: "bot",
+          },
+        ]);
+        setMessageInput("");
       } catch (e) {
         console.log(e);
       }
