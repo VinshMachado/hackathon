@@ -1,9 +1,11 @@
 import React from "react";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const videocall = () => {
   return (
     <>
       <div className="bg-green-600 text-white p-4 rounded-t-lg flex">
+        <SidebarTrigger />
         <h2 className="pl-20 text-xl font-semibold">Call</h2>
       </div>
       <iframe

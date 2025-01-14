@@ -29,7 +29,7 @@ const page = () => {
           { text: messageInput, from: "user" },
           {
             text:
-              data.data.score == 25
+              data.data.score != 3.34319594230692e-8
                 ? `mostly you have ${data.data.answer}`
                 : `${data.data.answer}`,
             from: "bot",

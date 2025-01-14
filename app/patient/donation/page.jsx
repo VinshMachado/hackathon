@@ -21,6 +21,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import axios from "axios";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 const donation = () => {
   const [formData, setFormData] = useState({
@@ -74,6 +75,7 @@ const donation = () => {
 
   return (
     <>
+      <SidebarTrigger />
       <div className="w-full h-[600px] sm:h-[500px] flex items-center justify-center p-10 bg-green-400">
         <Carousel className="h-full w-full">
           <CarouselContent className="h-full">
