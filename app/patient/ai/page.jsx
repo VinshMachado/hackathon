@@ -47,7 +47,7 @@ const page = () => {
         {/* Header */}
         <div className="bg-gradient-to-r from-blue-700 to-blue-400 text-white p-4 rounded-t-lg flex">
           <SidebarTrigger />
-          <h2 className="pl-20 text-xl font-semibold">Chat with DOC AI</h2>
+          <h2 className="pl-20 text-xl font-semibold">Synergetic Health</h2>
         </div>
 
         {/* Messages */}
