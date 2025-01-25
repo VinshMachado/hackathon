@@ -4,101 +4,58 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
+      <header>
+        <nav className="bg-white-600 text-black p-4 flex justify-between items-center">
+          <div className="container mx-auto flex justify-between items-center">
+            <a href="#" className="text-2xl font-bold">
+              Doctor
+            </a>
+            <ul className="flex space-x-7">
+              <li>
+                <a href="#" className="hover:underline">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
       {/* About Section */}
-      <div className="flex wrap justify-start w-full h-auto bg-gradient-to-r from-green-700 to-green-400">
-        {/* Left Section */}
-        <div className="flex flex-col justify-center w-100 h-100 p-10">
-          <div className="ml-10">
-            <div className=" flex flex-col bg-green-900 h-100 boder-4 border-green-800  rounded-lg shadow-lg p-5 justify-cener align-centers animate-fadeInUp ">
-              <img src="/health-call.png" alt="logo" className="w-70 h-60" />
-              <h1 className="text-white text-5xl font-bold">DocOnCall</h1>
-            </div>
-          </div>
-        </div>
-
-        {/* Middle Section */}
-        <div className="flex flex-wrap justify-center items-center ml-10">
-          <div className="max-w-max h-auto flex flex-col items-center p-4  delay-25">
-            <img
-              src="pexels-shvetsa-4225881.jpg"
-              alt="yoga"
-              className="w-50 h-64 mb-20 mr-3 border-4 border-green-800 rounded-lg shadow-lg"
-            />
-            <img
-              src="/pexels-mariya-b-555701080-30146897.jpg"
-              alt="online"
-              className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5  delay-50">
-            <img
-              src="/doctorw.png"
-              alt="doctor"
-              className="w-30 h-40 mb-10 ml-3 border-green-800 rounded-lg fil "
-            />
-            <img
-              src="/pexels-mirdental-network-34165767-7074380.jpg"
-              alt="doctor"
-              className="w-50 h-64 border-4 border-green-800 mr-5 rounded-lg shadow-lg"
-            />
-            <img
-              src="/stethoscopew.png"
-              alt="doctor"
-              className="w-30 h-40 mt-10 mr-2 border-green-800 rounded-lg  "
-            />
-          </div>
-        </div>
-
-        {/* Right Section */}
-        <div className="flex justify-center items-center">
-          <div className="max-w-max h-auto flex flex-col items-center p-4 ">
-            <img
-              src="/pexels-prasanthinturi-17799779.jpg"
-              alt="yoga"
-              className="w-50 h-64 mb-20 mr-3 border-4 border-green-800 rounded-lg shadow-lg"
-            />
-            <img
-              src="/pexels-rihan-ishan-das-739500-2519332.jpg"
-              alt="online"
-              className="w-50 h-64 -ml-1 border-4 border-green-800 rounded-lg shadow-lg"
-            />
-          </div>
-          <div className="max-w-max h-auto flex flex-col items-center justify-center m-5 ">
-            <img
-              src="/hospitalw.png"
-              alt="doctor"
-              className="w-30 h-40 mb-10 ml-3 border-green-800 rounded-lg"
-            />
-            <img
-              src="/pexels-karolina-grabowska-7195112.jpg"
-              alt="doctor"
-              className="w-50 h-64 border-4 border-green-800 mr-5 rounded-lg shadow-lg"
-            />
-            <img
-              src="/white heart.png"
-              alt="doctor"
-              className="w-30 h-40 mt-10 mr-2 border-green-800 rounded-lg"
-            />
-          </div>
-        </div>
+      <div className="flex wrap justify-center w-full h-auto bg-gradient-to-r from-blue-700 to-blue-400 ">
+        <img src="/logothing.jfif" className="h-30" />
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
         <Link href="./doctor">
-          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-green-700">
+          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-blue-700">
             Doctors Login
           </button>
         </Link>
         <Link href="./patient/ai">
-          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-700">
+          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700">
             Patient Login
           </button>
         </Link>
       </div>
       <div
         id="about"
-        className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-green-100 p-8 rounded-lg shadow-lg animate-appear"
+        className="flex flex-col justify-center items-center mt-10 w-full h-auto bg-blue-100 p-8 rounded-lg shadow-lg animate-appear"
       >
-        <h1 className="text-4xl font-bold text-green-700 mb-4">About</h1>
+        <h1 className="text-4xl font-bold text-blue-700 mb-4">About</h1>
         <p className="text-lg text-gray-700 text-center max-w-2xl">
           At DocOnCall, we make healthcare accessible by connecting patients
           with certified doctors through secure video consultations. Whether you
@@ -121,17 +78,17 @@ export default function Home() {
 
       {/* Features Section */}
       <div id="features" className="container mx-auto mt-10 p-5">
-        <h2 className="text-4xl font-bold text-center text-green-700 mb-10">
+        <h2 className="text-4xl font-bold text-center text-blue-700 mb-10">
           Our Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/laptop.png"
               alt="Video Call"
               className="w-24 h-24 mb-4"
             />
-            <h3 className="text-2xl font-bold text-green-700 mb-2">
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
               Video Call with Doctors
             </h3>
             <p className="text-gray-700 text-center">
@@ -139,13 +96,13 @@ export default function Home() {
               from the comfort of your home.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/mind-health.png"
               alt="AI Assistance"
               className="w-24 h-24 mb-4"
             />
-            <h3 className="text-2xl font-bold text-green-700 mb-2">
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
               AI Medical Assistance
             </h3>
             <p className="text-gray-700 text-center">
@@ -153,18 +110,83 @@ export default function Home() {
               your symptoms and medical history.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-green-800">
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/donation.png"
               alt="Donation Fund"
               className="w-24 h-24 mb-4"
             />
-            <h3 className="text-2xl font-bold text-green-700 mb-2">
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
               Donation Fund
             </h3>
             <p className="text-gray-700 text-center">
               Support those who can't afford healthcare by contributing to our
               donation fund.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="green"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="h-[100px]"
+            >
+              <path d="M12 14c4.418 0 8-1.79 8-4V8c0-2.21-3.582-4-8-4S4 5.79 4 8v2c0 2.21 3.582 4 8 4z" />
+              <path d="M8 13v2c0 1.657 1.79 3 4 3s4-1.343 4-3v-2" />
+              <path d="M12 20v2m-4-1h8" />
+            </svg>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">counselor</h3>
+            <p className="text-gray-700 text-center">
+              We have one of the finest counselors in city
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="green"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="mb-4"
+            >
+              <path d="M12 2L4.5 6.5v11l7.5 4.5 7.5-4.5v-11L12 2z" />
+              <path d="M9 12h6" />
+              <path d="M12 9v6" />
+            </svg>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
+              Hospital axis
+            </h3>
+            <p className="text-gray-700 text-center">
+              Get easy access to hospital facilities{" "}
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="green"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              className="h-[100px] mb-4"
+            >
+              <path d="M12 2l7 4v6c0 5.25-3 8-7 10-4-2-7-4.75-7-10V6l7-4z" />
+              <path d="M10 11h4m-2-2v4" />
+            </svg>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
+              Helth Insurance
+            </h3>
+            <p className="text-gray-700 text-center">
+              We support health insurence
             </p>
           </div>
         </div>

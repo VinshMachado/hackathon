@@ -76,7 +76,7 @@ const donation = () => {
   return (
     <>
       <SidebarTrigger />
-      <div className="w-full h-[600px] sm:h-[500px] flex items-center justify-center p-10 bg-green-400">
+      <div className="w-full h-[600px] sm:h-[500px] flex items-center justify-center p-10 bg-blue-400">
         <Carousel className="h-full w-full">
           <CarouselContent className="h-full">
             {data.map((data) => {
@@ -128,7 +128,7 @@ const donation = () => {
       <div>
         <AlertDialog>
           <AlertDialogTrigger>
-            <Button className="m-10 bg-green-400 shadow-lggit ">
+            <Button className="m-10 bg-blue-400 shadow-lggit ">
               Raise Funds?
             </Button>
           </AlertDialogTrigger>

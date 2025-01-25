@@ -45,7 +45,7 @@ const page = () => {
     <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="bg-white w-full h-full rounded-lg shadow-lg flex flex-col">
         {/* Header */}
-        <div className="bg-gradient-to-r from-green-700 to-green-400 text-white p-4 rounded-t-lg flex">
+        <div className="bg-gradient-to-r from-blue-700 to-blue-400 text-white p-4 rounded-t-lg flex">
           <SidebarTrigger />
           <h2 className="pl-20 text-xl font-semibold">Chat with DOC AI</h2>
         </div>
@@ -93,7 +93,7 @@ const page = () => {
           />
           <button
             onClick={handleSendMessage}
-            className="bg-green-500 text-white p-2 rounded-lg"
+            className="bg-blue-500 text-white p-2 rounded-lg"
           >
             Send
           </button>
