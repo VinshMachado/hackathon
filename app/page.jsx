@@ -8,7 +8,7 @@ export default function Home() {
         <nav className="bg-white-600 text-black p-4 flex justify-between items-center">
           <div className="container mx-auto flex justify-between items-center">
             <a href="#" className="text-2xl font-bold">
-              Doctor
+              Synergetic Health
             </a>
             <ul className="flex space-x-7">
               <li>
