@@ -36,8 +36,9 @@ export default function Home() {
         </nav>
       </header>
       {/* About Section */}
-      <div className="flex wrap justify-center w-full h-auto bg-gradient-to-r from-blue-700 to-blue-400 ">
-        <img src="/logothing.jfif" className="h-30" />
+      <div className="flex wrap justify-center w-full h-auto bg-gradient-to-r from-blue-700 to-blue-400  items-center">
+        <img src="/mainlogo.jpeg" className="h-64 w-64 rounded-full m-6" />
+        <h1 className="text-8xl ml-20 text-white">Synergetic Health</h1>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
         <Link href="./doctor">
