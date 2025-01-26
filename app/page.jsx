@@ -58,14 +58,18 @@ export default function Home() {
       >
         <h1 className="text-4xl font-bold text-blue-700 mb-4">About</h1>
         <p className="text-lg text-gray-700 text-center max-w-2xl">
-          Synergetic Health is your all-in-one solution for managing healthcare effortlessly.
-          It offers seamless access to insurance policies, ensuring you stay covered without the hassle. 
-          Consult doctors via secure video calls, anytime, from the comfort of your home. 
-          Leverage advanced AI medical assistance for quick and accurate health guidance and access to mental health counselors to support your emotional well-being and balance. 
-          Find and connect with hospitals easily for appointments and emergency needs. The app ensures all your healthcare data is organized and accessible in one place. 
-          With Synergetic Health, you eliminate the complexity of managing healthcare services. 
-          Designed to simplify, it helps you focus on what matters most your health and well-being.
-          Empower yourself with smarter, easier healthcare today!
+          Synergetic Health is your all-in-one solution for managing healthcare
+          effortlessly. It offers seamless access to insurance policies,
+          ensuring you stay covered without the hassle. Consult doctors via
+          secure video calls, anytime, from the comfort of your home. Leverage
+          advanced AI medical assistance for quick and accurate health guidance
+          and access to mental health counselors to support your emotional
+          well-being and balance. Find and connect with hospitals easily for
+          appointments and emergency needs. The app ensures all your healthcare
+          data is organized and accessible in one place. With Synergetic Health,
+          you eliminate the complexity of managing healthcare services. Designed
+          to simplify, it helps you focus on what matters most your health and
+          well-being. Empower yourself with smarter, easier healthcare today!
         </p>
         <p className="text-lg text-gray-700 text-center max-w-2xl mt-4">
           What makes us unique is our integration of cutting-edge AI technology.
@@ -74,10 +78,13 @@ export default function Home() {
           accurate diagnoses and personalized treatment plans.
         </p>
         <p className="text-lg text-gray-700 text-center max-w-2xl mt-4">
-     
-          Our mission at Synergetic Health is to revolutionize healthcare accessibility by integrating advanced technology and personalized services.
-          We strive to simplify healthcare management, ensuring everyone can access quality medical assistance, mental health support, and essential services effortlessly. 
-          By fostering convenience and trust, we aim to empower individuals to lead healthier, stress-free lives.
+          Our mission at Synergetic Health is to revolutionize healthcare
+          accessibility by integrating advanced technology and personalized
+          services. We strive to simplify healthcare management, ensuring
+          everyone can access quality medical assistance, mental health support,
+          and essential services effortlessly. By fostering convenience and
+          trust, we aim to empower individuals to lead healthier, stress-free
+          lives.
         </p>
       </div>
 
@@ -86,7 +93,7 @@ export default function Home() {
         <h2 className="text-4xl font-bold text-center text-blue-700 mb-10">
           Our Features
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/laptop.png"
@@ -144,7 +151,10 @@ export default function Home() {
               <path d="M8 13v2c0 1.657 1.79 3 4 3s4-1.343 4-3v-2" />
               <path d="M12 20v2m-4-1h8" />
             </svg>
-            <h3 className="text-2xl font-bold text-blue-700 mb-2"> Counsellor </h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2">
+              {" "}
+              Counsellor{" "}
+            </h3>
             <p className="text-gray-700 text-center">
               We have one of the finest counselors in city
             </p>
@@ -194,8 +204,9 @@ export default function Home() {
               We support health insurence
             </p>
           </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+        </div>
+        <div className="h-36 mt-5 w-full">
+          <div className="bg-white p-6 :p-20 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -219,16 +230,8 @@ export default function Home() {
               We conduct regular health checkup
             </p>
           </div>
-
-
-          
         </div>
       </div>
-
-        
-
-
-      
 
       {/* Contact Section */}
       <div id="contact" className="container mx-auto mt-10 p-5">
