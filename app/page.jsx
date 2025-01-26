@@ -144,7 +144,7 @@ export default function Home() {
               <path d="M8 13v2c0 1.657 1.79 3 4 3s4-1.343 4-3v-2" />
               <path d="M12 20v2m-4-1h8" />
             </svg>
-            <h3 className="text-2xl font-bold text-blue-700 mb-2">counselor</h3>
+            <h3 className="text-2xl font-bold text-blue-700 mb-2"> Counsellor </h3>
             <p className="text-gray-700 text-center">
               We have one of the finest counselors in city
             </p>
@@ -197,8 +197,7 @@ export default function Home() {
         </div>
       </div>
 
-
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -213,14 +212,17 @@ export default function Home() {
               <path d="M10 11h4m-2-2v4" />
             </svg>
             <h3 className="text-2xl font-bold text-blue-700 mb-2">
-              Helth checkup 
+              Helth Checkup
             </h3>
             <p className="text-gray-700 text-center">
-              We conducted regular health checkup
+              We conduct regular health checkup  
             </p>
           </div>
         </div>
       </div>
+
+
+      
 
       {/* Contact Section */}
       <div id="contact" className="container mx-auto mt-10 p-5">
