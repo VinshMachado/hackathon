@@ -194,32 +194,38 @@ export default function Home() {
               We support health insurence
             </p>
           </div>
-        </div>
-      </div>
 
-        <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+            <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
               viewBox="0 0 24 24"
               fill="none"
               stroke="green"
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="h-[100px] mb-4"
+              className="mb-4"
             >
-              <path d="M12 2l7 4v6c0 5.25-3 8-7 10-4-2-7-4.75-7-10V6l7-4z" />
-              <path d="M10 11h4m-2-2v4" />
+              <path d="M12 2L4.5 6.5v11l7.5 4.5 7.5-4.5v-11L12 2z" />
+              <path d="M9 12h6" />
+              <path d="M12 9v6" />
             </svg>
             <h3 className="text-2xl font-bold text-blue-700 mb-2">
-              Helth Checkup
+              Health Checkup
             </h3>
             <p className="text-gray-700 text-center">
-              We conduct regular health checkup  
+              We conduct regular health checkup
             </p>
           </div>
+
+
+          
         </div>
       </div>
+
+        
 
 
       
