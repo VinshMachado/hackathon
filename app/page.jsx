@@ -58,10 +58,14 @@ export default function Home() {
       >
         <h1 className="text-4xl font-bold text-blue-700 mb-4">About</h1>
         <p className="text-lg text-gray-700 text-center max-w-2xl">
-          At DocOnCall, we make healthcare accessible by connecting patients
-          with certified doctors through secure video consultations. Whether you
-          need expert advice or quick assistance, you can now get professional
-          medical care from the comfort of your home.
+          Synergetic Health is your all-in-one solution for managing healthcare effortlessly.
+          It offers seamless access to insurance policies, ensuring you stay covered without the hassle. 
+          Consult doctors via secure video calls, anytime, from the comfort of your home. 
+          Leverage advanced AI medical assistance for quick and accurate health guidance and access to mental health counselors to support your emotional well-being and balance. 
+          Find and connect with hospitals easily for appointments and emergency needs. The app ensures all your healthcare data is organized and accessible in one place. 
+          With Synergetic Health, you eliminate the complexity of managing healthcare services. 
+          Designed to simplify, it helps you focus on what matters most your health and well-being.
+          Empower yourself with smarter, easier healthcare today!
         </p>
         <p className="text-lg text-gray-700 text-center max-w-2xl mt-4">
           What makes us unique is our integration of cutting-edge AI technology.
@@ -70,10 +74,10 @@ export default function Home() {
           accurate diagnoses and personalized treatment plans.
         </p>
         <p className="text-lg text-gray-700 text-center max-w-2xl mt-4">
-          Our mission is to break barriers to healthcare, enhance the quality of
-          care through innovation, and prioritize the well-being of every
-          patient. With DocOnCall, you get reliable and compassionate
-          healthcare, anytime and anywhere.
+     
+          Our mission at Synergetic Health is to revolutionize healthcare accessibility by integrating advanced technology and personalized services.
+          We strive to simplify healthcare management, ensuring everyone can access quality medical assistance, mental health support, and essential services effortlessly. 
+          By fostering convenience and trust, we aim to empower individuals to lead healthier, stress-free lives.
         </p>
       </div>
 
