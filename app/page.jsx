@@ -37,7 +37,7 @@ export default function Home() {
       </header>
       {/* About Section */}
       <div className="flex wrap justify-center w-full h-auto bg-gradient-to-r from-blue-700 to-blue-400  items-center">
-        <img src="/mainlogo.jpeg" className="h-50 w-50 rounded-full m-6" />
+        <img src="/mainlogo.jpeg" className="h-75 w-75 rounded-full m-6" />
         <h1 className="text-8xl ml-20 text-white">Synergetic Health</h1>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
