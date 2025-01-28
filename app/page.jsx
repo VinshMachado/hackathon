@@ -237,7 +237,7 @@ export default function Home() {
       <div id="contact" className="container mx-auto mt-10 p-5">
         <div className="text-center">
           <h2 className="text-2xl font-semibold mb-5 text-blue-800">
-            Contact Us  9113218658
+            Contact Us  +91 9113218658
           </h2>
           <div className="flex justify-center items-center">
             <img
