@@ -3,14 +3,15 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <header>
-        <nav className="bg-white-600 text-black p-4 flex justify-between items-center">
-          <div className="container mx-auto flex justify-between items-center">
-            <a href="#" className="text-2xl font-bold">
+        <nav className="bg-white-600 text-black p-4 flex justify-evenly items-center ">
+          <div className="container flex justify-center sm:justify-between items-center">
+            <a href="#" className="hidden ml-0 sm:block  sm:text-2xl font-bold">
               Synergetic Health
             </a>
-            <ul className="flex space-x-7">
+
+            <ul className="flex justify-end space-x-7 text-lg font-medium">
               <li>
                 <a href="#" className="hover:underline">
                   Home
@@ -36,18 +37,20 @@ export default function Home() {
         </nav>
       </header>
       {/* About Section */}
-      <div className="flex wrap justify-center w-full h-auto bg-gradient-to-r from-blue-700 to-blue-400  items-center">
+      <div className="flex flex-wrap justify-center w-screen h-auto bg-gradient-to-r from-blue-700 to-blue-400  items-center">
         <img src="/mainlogo.jpeg" className="h-64 w-64 rounded-full m-6" />
-        <h1 className="text-8xl ml-20 text-white">Synergetic Health</h1>
+        <h1 className="sm:text-8xl text-6xl pb-4 text-white text-center">
+          Synergetic Health
+        </h1>
       </div>
       <div className="flex flex-col justify-center items-center mt-10">
         <Link href="./doctor">
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full mb-4 hover:bg-blue-700">
+          <button className="bg-blue-500 w-40 h-12 text-lg text-white font-bold py-2 px-4 rounded-3xl mb-4 hover:bg-blue-700">
             Doctors Login
           </button>
         </Link>
         <Link href="./patient/ai">
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700">
+          <button className="bg-blue-500 w-40 h-12 text-lg text-white font-bold py-2 px-4 rounded-3xl hover:bg-blue-700">
             Patient Login
           </button>
         </Link>
@@ -94,11 +97,11 @@ export default function Home() {
           Our Features
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white p-6 rounded-lg group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400 shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/laptop.png"
               alt="Video Call"
-              className="w-24 h-24 mb-4"
+              className="w-24 h-24 mb-4 group-hover:scale-125 duration-300"
             />
             <h3 className="text-2xl font-bold text-blue-700 mb-2">
               Video Call with Doctors
@@ -108,11 +111,11 @@ export default function Home() {
               from the comfort of your home.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/mind-health.png"
               alt="AI Assistance"
-              className="w-24 h-24 mb-4"
+              className="w-24  h-24 mb-4 group-hover:scale-125 duration-300"
             />
             <h3 className="text-2xl font-bold text-blue-700 mb-2">
               AI Medical Assistance
@@ -122,11 +125,11 @@ export default function Home() {
               your symptoms and medical history.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <img
               src="/donation.png"
               alt="Donation Fund"
-              className="w-24 h-24 mb-4"
+              className="w-24 h-24 mb-4 group-hover:scale-125 duration-300"
             />
             <h3 className="text-2xl font-bold text-blue-700 mb-2">
               Donation Fund
@@ -136,7 +139,7 @@ export default function Home() {
               donation fund.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -145,7 +148,7 @@ export default function Home() {
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="h-[100px]"
+              className="h-[100px] group-hover:scale-125 duration-300"
             >
               <path d="M12 14c4.418 0 8-1.79 8-4V8c0-2.21-3.582-4-8-4S4 5.79 4 8v2c0 2.21 3.582 4 8 4z" />
               <path d="M8 13v2c0 1.657 1.79 3 4 3s4-1.343 4-3v-2" />
@@ -159,7 +162,7 @@ export default function Home() {
               We have one of the finest counselors in city
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -170,7 +173,7 @@ export default function Home() {
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="mb-4"
+              className="mb-4 group-hover:scale-125 duration-300"
             >
               <path d="M12 2L4.5 6.5v11l7.5 4.5 7.5-4.5v-11L12 2z" />
               <path d="M9 12h6" />
@@ -183,7 +186,7 @@ export default function Home() {
               Get easy access to hospital facilities{" "}
             </p>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -192,7 +195,7 @@ export default function Home() {
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="h-[100px] mb-4"
+              className="h-[100px] mb-4 group-hover:scale-125 duration-300"
             >
               <path d="M12 2l7 4v6c0 5.25-3 8-7 10-4-2-7-4.75-7-10V6l7-4z" />
               <path d="M10 11h4m-2-2v4" />
@@ -206,7 +209,7 @@ export default function Home() {
           </div>
         </div>
         <div className="h-36 mt-5 w-full">
-          <div className="bg-white p-6 :p-20 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
+          <div className="bg-white  group shadow-white transform hover:translate-y-[-8px] duration-300 ease hover:shadow-blue-400  p-6 :p-20 rounded-lg shadow-lg flex flex-col items-center border-4 border-blue-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="80"
@@ -217,7 +220,7 @@ export default function Home() {
               stroke-width="1"
               stroke-linecap="round"
               stroke-linejoin="round"
-              className="mb-4"
+              className="mb-4 group-hover:scale-125 duration-300"
             >
               <path d="M12 2L4.5 6.5v11l7.5 4.5 7.5-4.5v-11L12 2z" />
               <path d="M9 12h6" />
@@ -234,10 +237,10 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="container mx-auto mt-10 p-5">
+      <div id="contact" className="container mx-auto mt-14 p-5">
         <div className="text-center">
           <h2 className="text-2xl font-semibold mb-5 text-blue-800">
-            Contact Us  +91 9113218658
+            Contact Us +91 9113218658
           </h2>
           <div className="flex justify-center items-center">
             <img
