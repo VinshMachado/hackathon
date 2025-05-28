@@ -4,41 +4,47 @@ import { useState } from "react";
 import { SidebarTrigger } from "@/components/ui/sidebar";
 import axios from "axios";
 const page = () => {
-  const [messages, setMessages] = useState([]);
   const [messageInput, setMessageInput] = useState("");
+  const [messages, setMessages] = useState([]);
 
   const handleSendMessage = async () => {
-    if (messageInput.trim() !== "") {
-      try {
-        const data = await axios.post(
-          "https://hackathonbackend-03v1.onrender.com/ai/detect",
-          { question: `${messageInput}` },
-          {
-            headers: {
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        if (!data) {
-          data = " i cant find data is your internet on ?";
-        }
+    if (!messageInput.trim()) return;
 
-        console.log(data.data);
-        setMessages([
-          ...messages,
-          { text: messageInput, from: "user" },
-          {
-            text:
-              data.data.score != 3.34319594230692e-8
-                ? `mostly you have ${data.data.answer}`
-                : `${data.data.answer}`,
-            from: "bot",
-          },
-        ]);
-        setMessageInput("");
-      } catch (e) {
-        console.log(e);
-      }
+    const apiKey = process.env.NEXT_PUBLIC_API;
+    const endpoint =
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+
+    const requestBody = {
+      contents: [{ role: "user", parts: [{ text: messageInput }] }],
+    };
+
+    try {
+      const res = await fetch(`${endpoint}?key=${apiKey}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      const data = await res.json();
+
+      const botReply =
+        data.candidates?.[0]?.content?.parts?.[0]?.text || "No response.";
+
+      setMessages((prev) => [
+        ...prev,
+        { role: "user", text: messageInput },
+        { role: "bot", text: botReply },
+      ]);
+      setMessageInput("");
+    } catch (err) {
+      console.error(err);
+      setMessages((prev) => [
+        ...prev,
+        { role: "user", text: messageInput },
+        { role: "bot", text: "Error: Could not connect to API." },
+      ]);
     }
   };
   return (
@@ -65,14 +71,14 @@ const page = () => {
           {messages.map((msg, index) => (
             <div
               key={index}
-              className={`flex ${
+              className={`flex w-full ${
                 msg.from === "user" ? "justify-end" : "justify-start"
               }`}
             >
               <div
                 className={`max-w-xs p-3 rounded-lg ${
                   msg.from === "user"
-                    ? "bg-green-600 text-white p-4 rounded-lg shadow-md"
+                    ? "bg-green-600 text-white p-4  rounded-lg shadow-md"
                     : "bg-gray-200 text-black"
                 }`}
               >
