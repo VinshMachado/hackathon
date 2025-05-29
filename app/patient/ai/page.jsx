@@ -15,7 +15,24 @@ const page = () => {
       "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
 
     const requestBody = {
-      contents: [{ role: "user", parts: [{ text: messageInput }] }],
+      systemInstruction: {
+        role: "system",
+        parts: [
+          {
+            text: "You are a health assistant. Reply with simple remedies and avoid long explanations.",
+          },
+        ],
+      },
+      contents: [
+        {
+          role: "user",
+          parts: [
+            {
+              text: messageInput,
+            },
+          ],
+        },
+      ],
     };
 
     try {
@@ -59,7 +76,7 @@ const page = () => {
         {/* Messages */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           <div className={`max-w-xs p-3 rounded-lg  bg-gray-200 text-black`}>
-            Enter your symptoms
+            Hi there im a health bot could you please enter your symptoms
           </div>
           <div className="flex mt-20 justify-center items-center absolute top-[50px] right-[330px] w-[600px] h-[600px]">
             <img
@@ -72,14 +89,14 @@ const page = () => {
             <div
               key={index}
               className={`flex w-full ${
-                msg.from === "user" ? "justify-end" : "justify-start"
+                msg.role === "user" ? "justify-end" : "justify-start"
               }`}
             >
               <div
                 className={`max-w-xs p-3 rounded-lg ${
-                  msg.from === "user"
-                    ? "bg-green-600 text-white p-4  rounded-lg shadow-md"
-                    : "bg-gray-200 text-black"
+                  msg.role === "user"
+                    ? "bg-blue-600 text-white p-4  rounded-lg shadow-md"
+                    : "bg-gray-200  text-black"
                 }`}
               >
                 {msg.text}
